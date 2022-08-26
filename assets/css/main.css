@@ -3906,3 +3906,7 @@ input, select, textarea {
 			}
 
 		}
+
+    /* CSS class for the read more button */
+
+    #more {display: none;}
