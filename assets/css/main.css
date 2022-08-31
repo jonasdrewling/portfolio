@@ -3962,6 +3962,20 @@ input, select, textarea {
   transition: height 0.5s ease-in-out;
 }
 
+/* Even Longer Read More */
+
+.expandMoreContent3 {
+  height: 180px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.expandMoreContent3.expand-active {
+  height: auto;
+  transition: height 0.5s ease-in-out;
+}
+
 .expandedContent {
   padding: 15px 0;
   text-align: center;
