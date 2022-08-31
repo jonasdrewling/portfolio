@@ -189,20 +189,23 @@
 
 })(jQuery);
 
-// JS for the read more button
+/* **************************************************************** My Alterations **************************************************************** */
 
-function readMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+document.addEventListener('DOMContentLoaded', () => {
+  const expandsMore = document.querySelectorAll('[expand-more]')
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+  function expand() {
+    const showContent = document.getElementById(this.dataset.target)
+    if (showContent.classList.contains('expand-active')) {
+      this.innerHTML=this.dataset.showtext
+    }
+    else {
+      this.innerHTML=this.dataset.hidetext
+    }
+    showContent.classList.toggle('expand-active')
   }
-}
+    expandsMore.forEach(expandsMore => {
+      expandsMore.addEventListener('click', expand)
+    })
+
+})

@@ -2591,6 +2591,11 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+/* Added border */
+      border-radius: 0.25em;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #f1f1f1;
 		}
 
 			.image.fit img {
@@ -3906,10 +3911,10 @@ input, select, textarea {
 			}
 
 		}
-
+/* **************************************************************** My Alterations **************************************************************** */
     /* CSS for the read more button */
 
-      #more {
+      /* #more {
         display: none;
         }
       
@@ -3921,8 +3926,80 @@ input, select, textarea {
         transform: translate(-50%, -50%);
       }
 
-    /* Custom Headings */
+/* **************************************************************** Custom Headings **************************************************************** */
 
-      #headingTwo {
-        text-align: center;
-        }
+.headingTwo {
+  text-align: center;
+  }
+
+/* **************************************************************** Read More Buttons **************************************************************** */
+
+/* Standard Read More */
+
+.expandMoreContent {
+  height: 110px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.expandMoreContent.expand-active {
+  height: auto;
+  transition: height 0.5s ease-in-out;
+}
+
+/* Longer Read More */
+
+.expandMoreContent2 {
+  height: 120px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.expandMoreContent2.expand-active {
+  height: auto;
+  transition: height 0.5s ease-in-out;
+}
+
+.expandedContent {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.btn-expand-more {
+  /*cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  display: inline-block;*/
+  
+  -moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: border-color 0.2s ease;
+		-webkit-transition: border-color 0.2s ease;
+		-ms-transition: border-color 0.2s ease;
+		transition: border-color 0.2s ease;
+		background-color: transparent;
+		border: solid 3px !important;
+		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-radius: 3em;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.6em;
+		font-weight: bold;
+		height: calc(4.75em + 2px);
+		letter-spacing: 0.25em;
+		line-height: 4.75em;
+		outline: 0;
+		padding: 0 3.75em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+}
+
+/* **************************************************************** Read More Classes **************************************************************** */
+
