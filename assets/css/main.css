@@ -3907,6 +3907,22 @@ input, select, textarea {
 
 		}
 
-    /* CSS class for the read more button */
+    /* CSS for the read more button */
 
-    #more {display: none;}
+      #more {
+        display: none;
+        }
+      
+      .centerButt {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+    /* Custom Headings */
+
+      #headingTwo {
+        text-align: center;
+        }
