@@ -2594,7 +2594,7 @@ input, select, textarea {
     }
 
     /* Added border */
-    
+
     .image.fit.border {
       border-radius: 0.25em;
       border-style: solid;
@@ -3939,7 +3939,6 @@ input, select, textarea {
 /* **************************************************************** Read More Buttons **************************************************************** */
 
 /* Standard Read More */
-
 .expandMoreContent {
   height: 110px;
   overflow: hidden;
@@ -3952,8 +3951,7 @@ input, select, textarea {
   transition: height 0.5s ease-in-out;
 }
 
-/* Longer Read More */
-
+/* Long Read More */
 .expandMoreContent2 {
   height: 120px;
   overflow: hidden;
@@ -3966,8 +3964,7 @@ input, select, textarea {
   transition: height 0.5s ease-in-out;
 }
 
-/* Even Longer Read More */
-
+/* Longer Read More */
 .expandMoreContent3 {
   height: 180px;
   overflow: hidden;
@@ -3976,6 +3973,19 @@ input, select, textarea {
 }
 
 .expandMoreContent3.expand-active {
+  height: auto;
+  transition: height 0.5s ease-in-out;
+}
+
+/* Entirely Hidden Read More */
+.expandMoreContent4 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.expandMoreContent4.expand-active {
   height: auto;
   transition: height 0.5s ease-in-out;
 }
