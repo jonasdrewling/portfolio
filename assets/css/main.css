@@ -2593,6 +2593,10 @@ input, select, textarea {
 			width: 100%;
     }
 
+    .image.fit img {
+      width: 100%;
+    }
+
     /* Added border */
 
     .image.fit.border {
@@ -2600,11 +2604,7 @@ input, select, textarea {
       border-style: solid;
       border-width: 2px;
       border-color: #f1f1f1;
-    }
-
-			.image.fit img {
-				width: 100%;
-			}
+    }			
 
 		.image.main {
 			display: block;
