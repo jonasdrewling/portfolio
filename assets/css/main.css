@@ -2591,12 +2591,16 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-/* Added border */
+    }
+
+    /* Added border */
+    
+    .image.fit.border {
       border-radius: 0.25em;
       border-style: solid;
       border-width: 2px;
       border-color: #f1f1f1;
-		}
+    }
 
 			.image.fit img {
 				width: 100%;
